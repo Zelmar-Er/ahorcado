@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header><h1><img src="img/logo.png" alt="logo"></h1></header>
+
+    <main>
+        <section id="canvas-tablero" class="">
+            
+        </section>
+        <aside id="spacio-letras" class="espacios-letras"></aside>
+        <aside id="letras-incorrectas" class="invisible"></aside>
+    </main>
+
+    <section class="section-input">
+        <label for="palabra"></label>
+        <input type="text" class="input invisible" id="input" placeholder="Ingrese una palabra">
+        <p class="input-error invisible"></p>
+    </section>
+
+    <section id="seccion-principal" class="seccion-column">
+        <button id="inicia-juego" class="btn-principal">Iniciar Juego</button>
+
+        <button id="agrega-palabra" class="btn-secundario">Agregar Palabra</button>
+
+        <button id="guarda-empieza" class="btn-principal-small invisible">Guardar y empezar</button>
+
+        <button id="cancel" class="btn-secundario invisible">Cancelar</button>
+
+        <button id="new-game" class="btn-principal-small invisible">Nuevo juego</button>
+
+        <button id="leave" class="btn-secundario invisible">Desistir</button>
+    </section>
+    <footer>
+        <p>Desarrollado por Zelmar Pumputis <a href="https://github.com/Zelmar-Er" target="_blank"> GitHub</a> <a href="https://www.linkedin.com/in/zelmar-pumputis/" target="_blank">Linkedin</a></p>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/iniciarJuego.js"></script>
+    <script src="js/agregarPalabra.js"></script>
+    <script src="js/guardarPalabra.js"></script>
+    <script src="js/tablero.js"></script>
+    <script src="js/leave.js"></script>
+    <script src="js/dibujar.js"></script>
+</body>
+</html>
