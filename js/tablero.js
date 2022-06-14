@@ -35,7 +35,7 @@ function crearTablero(){
 
     palabra.forEach((letra)=>{
         let p = letra.querySelector('p');
-           letras.push(p.innerText)
+            letras.push(p.innerText)
     })
     
     addEventListener('keypress',(e)=>{
@@ -78,6 +78,7 @@ function comparar(valor,letras){
                         mostrarMensaje('Ganaste','green')
                         points = 0;
                         setTimeout(()=>{
+                            resetearDibujo()
                             sortearPalabra();
                             crearTablero();
                         },3000)
@@ -96,10 +97,8 @@ function comparar(valor,letras){
             if(incorrectasArr.length === 8){
                 mostrarMensaje('Perdiste','red');
                 setTimeout(()=>{
-                    let hoja = document.querySelector('canvas');
-                    let p = hoja.getContext('2d');
-                    p.clearRect(0, 0,1000,600);
                     points = 0;
+                    resetearDibujo()
                     sortearPalabra();
                     crearTablero();
                     incorrectasArr = [];
@@ -119,4 +118,10 @@ function mostrarMensaje(texto,colorFuente = '#000'){
         addRemoveClass(mensaje,'invisible');
         mensaje.textContent = '';
     },2000)
+}
+
+function resetearDibujo(){
+    let hoja = document.querySelector('canvas');
+    let p = hoja.getContext('2d');
+        p.clearRect(0, 0,1000,600);
 }
