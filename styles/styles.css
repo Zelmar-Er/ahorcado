@@ -69,6 +69,20 @@ main section{
     margin: 10px 15px;
     width: 30px;
 }
+.espacios-letras p{
+    
+
+}
+.espacios-letras div::before{
+    content: '';
+    position: absolute;
+    background-color: #0A3871;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    bottom: -120px;
+    margin-left: -15px;
+}
 #letras-incorrectas{
     height: 40px;
     text-align: center;
@@ -84,15 +98,7 @@ main section{
     margin: 10px 15px;
     width: 30px;
 }
-.espacios-letras div::before{
-    content: '';
-    position: absolute;
-    background-color: #0A3871;
-    bottom: 0;
-    width: 30px;
-    height: 3px;
-    margin: -88px -15px;
-}
+
 /* .espacios-letras p{
     margin-bottom: 5px;
 } */
