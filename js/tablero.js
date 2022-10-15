@@ -7,16 +7,16 @@ let incorrectasArr = [];
 let points = 0;
 let letras = [];
 
-    // tablero.width = 1000;
-    // tablero.height = 600;
+    // tablero.width = 900;
+    // tablero.height = 400;
 
 function crearTablero(){
     if(tablero.children.length == 0){
         let fragment = document.createDocumentFragment();
         let canvas = document.createElement('canvas');
 
-        canvas.width = 1000;
-        canvas.height = 600;
+        canvas.width = 900;
+        canvas.height = 400;
         canvas.style.backgroundColor = '#fff';
 
         fragment.appendChild(canvas);

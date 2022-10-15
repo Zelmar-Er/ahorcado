@@ -4,8 +4,8 @@ body{
 
 /* BTN */
 .btn-principal{
-    height: 114px;
-    width: 317px;
+    height: 100px;
+    width: 300px;
     left: 561px;
     top: 402px;
     border: none;
@@ -16,23 +16,23 @@ body{
     color: #eee;
 }
 .btn-principal-small{
-    height: 67;
-    width: 317px;
+    height: 50px;
+    width: 300px;
     left: 561px;
     top: 402px;
     border-radius: 24px;
-    padding: 24px;
+    padding: 15px;
     background-color: #0A3871;
     font-size: 18px;
     color: #eee;
 }
 .btn-secundario{
-    height: 67px;
-    width: 280px;
+    height: 50px;
+    width: 250px;
     left: 579px;
     top: 554px;
     border-radius: 24px;
-    padding: 24px;
+    padding: 15px;
     border: 1px solid #0A3871;
     color: #0A3871;
     font-size: 16px;
@@ -44,6 +44,7 @@ body{
 
 /* TABLERO */
 h1{
+    display: inline-block;
     margin: 10px 0 0 20px;
 }
 
@@ -59,7 +60,7 @@ main section{
 .espacios-letras{
     height: 40px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 .espacios-letras div{
     text-transform: uppercase;
@@ -80,7 +81,7 @@ main section{
     bottom: 0;
     width: 30px;
     height: 3px;
-    bottom: -120px;
+    bottom: 110px;
     margin-left: -15px;
 }
 #letras-incorrectas{
@@ -88,7 +89,7 @@ main section{
     text-align: center;
     margin-bottom: 10px;
     position: absolute;
-    top: 40%;
+    top: 20%;
 }
 #letras-incorrectas p{
     text-transform: uppercase;
